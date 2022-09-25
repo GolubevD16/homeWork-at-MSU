@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA887FE28E0D80B009AC179 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AA887FD28E0D80B009AC179 /* main.cpp */; };
 		0ACBCD6128CE0B5200567F79 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ACBCD6028CE0B5200567F79 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0AA887F928E0D80B009AC179 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		0ACBCD5B28CE0B5200567F79 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +33,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AA887FB28E0D80B009AC179 /* gnomeVsSheiker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gnomeVsSheiker; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA887FD28E0D80B009AC179 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0ACBCD5D28CE0B5200567F79 /* homework at MSU */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "homework at MSU"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACBCD6028CE0B5200567F79 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0AA887F828E0D80B009AC179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ACBCD5A28CE0B5200567F79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +57,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA887FC28E0D80B009AC179 /* gnomeVsSheiker */ = {
+			isa = PBXGroup;
+			children = (
+				0AA887FD28E0D80B009AC179 /* main.cpp */,
+			);
+			path = gnomeVsSheiker;
+			sourceTree = "<group>";
+		};
 		0ACBCD5428CE0B5200567F79 = {
 			isa = PBXGroup;
 			children = (
 				0ACBCD5F28CE0B5200567F79 /* homework at MSU */,
+				0AA887FC28E0D80B009AC179 /* gnomeVsSheiker */,
 				0ACBCD5E28CE0B5200567F79 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0ACBCD5D28CE0B5200567F79 /* homework at MSU */,
+				0AA887FB28E0D80B009AC179 /* gnomeVsSheiker */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +94,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0AA887FA28E0D80B009AC179 /* gnomeVsSheiker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA8880128E0D80B009AC179 /* Build configuration list for PBXNativeTarget "gnomeVsSheiker" */;
+			buildPhases = (
+				0AA887F728E0D80B009AC179 /* Sources */,
+				0AA887F828E0D80B009AC179 /* Frameworks */,
+				0AA887F928E0D80B009AC179 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gnomeVsSheiker;
+			productName = gnomeVsSheiker;
+			productReference = 0AA887FB28E0D80B009AC179 /* gnomeVsSheiker */;
+			productType = "com.apple.product-type.tool";
+		};
 		0ACBCD5C28CE0B5200567F79 /* homework at MSU */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ACBCD6428CE0B5200567F79 /* Build configuration list for PBXNativeTarget "homework at MSU" */;
@@ -91,6 +137,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					0AA887FA28E0D80B009AC179 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					0ACBCD5C28CE0B5200567F79 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -110,11 +159,20 @@
 			projectRoot = "";
 			targets = (
 				0ACBCD5C28CE0B5200567F79 /* homework at MSU */,
+				0AA887FA28E0D80B009AC179 /* gnomeVsSheiker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0AA887F728E0D80B009AC179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA887FE28E0D80B009AC179 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ACBCD5928CE0B5200567F79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +184,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0AA887FF28E0D80B009AC179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D399ZX79K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AA8880028E0D80B009AC179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D399ZX79K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0ACBCD6228CE0B5200567F79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -260,6 +338,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0AA8880128E0D80B009AC179 /* Build configuration list for PBXNativeTarget "gnomeVsSheiker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA887FF28E0D80B009AC179 /* Debug */,
+				0AA8880028E0D80B009AC179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0ACBCD5828CE0B5200567F79 /* Build configuration list for PBXProject "homework at MSU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
